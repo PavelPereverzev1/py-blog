@@ -63,6 +63,9 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = "blog.User"
+
+LOGIN_REDIRECT_URL = "/"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
