@@ -5,6 +5,7 @@ from .models import User, Post, Commentary
 
 admin.site.unregister(Group)
 
+
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     search_fields = ("username", "email", "first_name", "last_name")
