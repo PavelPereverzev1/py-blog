@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +20,13 @@
 <main>
   {% block content %}
   {% endblock %}
+  {% block pagination %}
+    {% include "includes/pagination.html" %}
+  {% endblock %}
 </main>
 
 <footer>
-  <p>&copy; 2026 Copyrights</p>
+  <p>&copy; 2026 All Rights Reserved.</p>
 </footer>
 
 </body>

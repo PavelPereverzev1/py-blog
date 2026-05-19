@@ -6,3 +6,4 @@ class PostListView(ListView):
     template_name = 'blog/index.html'
     context_object_name = 'posts'
     ordering = ['-created_time']
+    paginate_by = 5
